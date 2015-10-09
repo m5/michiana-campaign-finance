@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Counterparty:</strong>
+  <%= @accounting_transaction.counterparty %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @accounting_transaction.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @accounting_transaction.amount %>
+</p>
+
+<p>
+  <strong>Amount ytd:</strong>
+  <%= @accounting_transaction.amount_ytd %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @accounting_transaction.type %>
+</p>
+
+<p>
+  <strong>Nature:</strong>
+  <%= @accounting_transaction.nature %>
+</p>
+
+<%= link_to 'Edit', edit_accounting_transaction_path(@accounting_transaction) %> |
+<%= link_to 'Back', accounting_transactions_path %>

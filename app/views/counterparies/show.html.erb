@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @counterpary.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @counterpary.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @counterpary.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @counterpary.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @counterpary.zip %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @counterpary.occupation %>
+</p>
+
+<p>
+  <strong>Office:</strong>
+  <%= @counterpary.office %>
+</p>
+
+<%= link_to 'Edit', edit_counterpary_path(@counterpary) %> |
+<%= link_to 'Back', counterparies_path %>

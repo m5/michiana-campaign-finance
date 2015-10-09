@@ -1,0 +1,99 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Committee:</strong>
+  <%= @accounting_report.committee %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @accounting_report.type %>
+</p>
+
+<p>
+  <strong>Period start:</strong>
+  <%= @accounting_report.period_start %>
+</p>
+
+<p>
+  <strong>Period end:</strong>
+  <%= @accounting_report.period_end %>
+</p>
+
+<p>
+  <strong>Ammendment:</strong>
+  <%= @accounting_report.ammendment %>
+</p>
+
+<p>
+  <strong>Cash year start:</strong>
+  <%= @accounting_report.cash_year_start %>
+</p>
+
+<p>
+  <strong>Cash period start:</strong>
+  <%= @accounting_report.cash_period_start %>
+</p>
+
+<p>
+  <strong>Contributions itemized:</strong>
+  <%= @accounting_report.contributions_itemized %>
+</p>
+
+<p>
+  <strong>Contributions itemized ytd:</strong>
+  <%= @accounting_report.contributions_itemized_ytd %>
+</p>
+
+<p>
+  <strong>Contributions unitemized:</strong>
+  <%= @accounting_report.contributions_unitemized %>
+</p>
+
+<p>
+  <strong>Contributions unitemized ytd:</strong>
+  <%= @accounting_report.contributions_unitemized_ytd %>
+</p>
+
+<p>
+  <strong>Expenditures itemized:</strong>
+  <%= @accounting_report.expenditures_itemized %>
+</p>
+
+<p>
+  <strong>Expenditures unitemized:</strong>
+  <%= @accounting_report.expenditures_unitemized %>
+</p>
+
+<p>
+  <strong>Expenditures itemized ytd:</strong>
+  <%= @accounting_report.expenditures_itemized_ytd %>
+</p>
+
+<p>
+  <strong>Expenditures unitemized ytd:</strong>
+  <%= @accounting_report.expenditures_unitemized_ytd %>
+</p>
+
+<p>
+  <strong>Debts owed to:</strong>
+  <%= @accounting_report.debts_owed_to %>
+</p>
+
+<p>
+  <strong>Debts owed by:</strong>
+  <%= @accounting_report.debts_owed_by %>
+</p>
+
+<p>
+  <strong>Signed at:</strong>
+  <%= @accounting_report.signed_at %>
+</p>
+
+<p>
+  <strong>Source url:</strong>
+  <%= @accounting_report.source_url %>
+</p>
+
+<%= link_to 'Edit', edit_accounting_report_path(@accounting_report) %> |
+<%= link_to 'Back', accounting_reports_path %>

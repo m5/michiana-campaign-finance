@@ -1,0 +1,2 @@
+module AccountingTransactionsHelper
+end

@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Accounting Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Committee</th>
+      <th>Type</th>
+      <th>Period start</th>
+      <th>Period end</th>
+      <th>Ammendment</th>
+      <th>Cash year start</th>
+      <th>Cash period start</th>
+      <th>Contributions itemized</th>
+      <th>Contributions itemized ytd</th>
+      <th>Contributions unitemized</th>
+      <th>Contributions unitemized ytd</th>
+      <th>Expenditures itemized</th>
+      <th>Expenditures unitemized</th>
+      <th>Expenditures itemized ytd</th>
+      <th>Expenditures unitemized ytd</th>
+      <th>Debts owed to</th>
+      <th>Debts owed by</th>
+      <th>Signed at</th>
+      <th>Source url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accounting_reports.each do |accounting_report| %>
+      <tr>
+        <td><%= accounting_report.committee %></td>
+        <td><%= accounting_report.type %></td>
+        <td><%= accounting_report.period_start %></td>
+        <td><%= accounting_report.period_end %></td>
+        <td><%= accounting_report.ammendment %></td>
+        <td><%= accounting_report.cash_year_start %></td>
+        <td><%= accounting_report.cash_period_start %></td>
+        <td><%= accounting_report.contributions_itemized %></td>
+        <td><%= accounting_report.contributions_itemized_ytd %></td>
+        <td><%= accounting_report.contributions_unitemized %></td>
+        <td><%= accounting_report.contributions_unitemized_ytd %></td>
+        <td><%= accounting_report.expenditures_itemized %></td>
+        <td><%= accounting_report.expenditures_unitemized %></td>
+        <td><%= accounting_report.expenditures_itemized_ytd %></td>
+        <td><%= accounting_report.expenditures_unitemized_ytd %></td>
+        <td><%= accounting_report.debts_owed_to %></td>
+        <td><%= accounting_report.debts_owed_by %></td>
+        <td><%= accounting_report.signed_at %></td>
+        <td><%= accounting_report.source_url %></td>
+        <td><%= link_to 'Show', accounting_report %></td>
+        <td><%= link_to 'Edit', edit_accounting_report_path(accounting_report) %></td>
+        <td><%= link_to 'Destroy', accounting_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Accounting report', new_accounting_report_path %>

@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  committee_id: 
+  type: 
+  period_start: 2015-09-14
+  period_end: 2015-09-14
+  ammendment: false
+  cash_year_start: 9.99
+  cash_period_start: 9.99
+  contributions_itemized: 9.99
+  contributions_itemized_ytd: 9.99
+  contributions_unitemized: 9.99
+  contributions_unitemized_ytd: 9.99
+  expenditures_itemized: 9.99
+  expenditures_unitemized: 9.99
+  expenditures_itemized_ytd: 9.99
+  expenditures_unitemized_ytd: 9.99
+  debts_owed_to: 9.99
+  debts_owed_by: 9.99
+  signed_at: 2015-09-14
+  source_url: MyString
+
+two:
+  committee_id: 
+  type: 
+  period_start: 2015-09-14
+  period_end: 2015-09-14
+  ammendment: false
+  cash_year_start: 9.99
+  cash_period_start: 9.99
+  contributions_itemized: 9.99
+  contributions_itemized_ytd: 9.99
+  contributions_unitemized: 9.99
+  contributions_unitemized_ytd: 9.99
+  expenditures_itemized: 9.99
+  expenditures_unitemized: 9.99
+  expenditures_itemized_ytd: 9.99
+  expenditures_unitemized_ytd: 9.99
+  debts_owed_to: 9.99
+  debts_owed_by: 9.99
+  signed_at: 2015-09-14
+  source_url: MyString
